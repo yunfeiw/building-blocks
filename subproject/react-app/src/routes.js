@@ -1,0 +1,21 @@
+import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import About from './pages/About';
+import List from './pages/List';
+import Home from './pages/Home';
+
+
+
+const Router = () => (
+    <BrowserRouter basename={window.__POWERED_BY_QIANKUN__ ? '/react-app' : '/'}>
+        <Link to="/">首页</Link> |
+        <Link to="/about">About</Link> |
+        <Link to="/list">List</Link>
+        <Routes>
+            <Route exact path='/' element={<Home />} />
+            <Route exact path='/about' element={<About />} />
+            <Route exact path='/list' element={<List />} />
+        </Routes>
+    </BrowserRouter>
+)
+
+export default Router
