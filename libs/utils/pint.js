@@ -4,7 +4,7 @@ const chalk = require('chalk');
  * @description 分割线
  */
 const hrLog = () => {
-    console.log(chalk.whiteBright('===================='));
+    console.log(chalk.whiteBright('————————————————————'));
 }
 /**
  * @description 标题
@@ -33,4 +33,4 @@ const log3 = (txt) => {
 // 封装打印日志函数
 const log = (content) => console.log(chalk.green(content));
 
-module.exports = {hrLog, log1, log2, log3 };
+module.exports = { hrLog, log1, log2, log3 };

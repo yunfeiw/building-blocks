@@ -6,11 +6,9 @@
   "directories": {
     "doc": "docs"
   },
-  "bin": {
-    "yf": "./index.js"
-  },
   "scripts": {
-    "dev": "node ./libs/dev.js",
+    "dev": "cross-env YUNFEI=123 NODE_ENV=production node ./bin/dev.js",
+    "build-all": "node ./bin/pro.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +24,7 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^9.0.0",
+    "cross-env": "^7.0.3",
     "figlet": "^1.5.2"
   },
   "devDependencies": {
