@@ -20,7 +20,9 @@ module.exports = {
     };
     config.historyApiFallback = true;
     config.hot = false;
-    console.log(config)
+
+    // console.log(config)
+    
     // config.watchContentBase = false;
     config.liveReload = false;
 

@@ -1,9 +1,8 @@
 const fs = require("fs");
 const { resolve } = require("path");
-const program = require('commander');
+const cmd = require('node-cmd')
 const { promisify } = require("util");
 const figlet = promisify(require('figlet'));
-
 
 
 // 打印
@@ -34,7 +33,6 @@ class app {
     // 收集任务
     async collectServe() {
 
-
         fs.readdir(`./subproject`, (err, data) => {
 
             data.forEach(fileName => {
@@ -53,7 +51,13 @@ class app {
         const urls = [...this.subProgarms.values()];
 
         while (urls.length) {
-            await spawn(process.platform === 'win32' ? 'npm.cmd' : 'npm', ["install"], { cwd: urls.pop() });
+            cmd.run(
+                `start cmd /k "cd ${urls.pop()} &&  npm run serve"
+                `,
+                function (data) {
+                    console.log("data")
+                }
+            );
 
         }
     }
