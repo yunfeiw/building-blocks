@@ -5,18 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>building-blocks</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: #000;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        #app-main {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+        }
+
+        /* 菜单 */
+        .menu-main {
+            padding-top: 20px;
+            width: 180px;
+            background: #261d1d;
+        }
+        .menu-main li {
+            padding-left: 20px;
+            line-height: 30px;
+        }
+        .menu-main li a{
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        /* 容器 */
+        .view-main {
+            flex: 1;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- 导航 -->
-    <div>
-        <span onclick="push('/vue-app')"><a href="javascript:;">vue</a></span> | 
-        <span onclick="push('/react-app')"><a href="javascript:;">react</a></span>
+    <div id="app-main">
+        <!-- 菜单 -->
+        <div class="menu-main">
+            <ul>
+                <li onclick="push('/vue-app')"><a href="javascript:;">vue</a></li>
+                <li onclick="push('/react-app')"><a href="javascript:;">react</a></li>
+            </ul>
+        </div>
+        <!-- view -->
+        <div class="view-main">
+            <!-- 容器 -->
+            <div id="container"></div>
+        </div>
     </div>
-    <hr />
-    <!-- 容器 -->
-    <div id="container"></div>
     <script>
         function push(subapp) {
             history.pushState(null, subapp, subapp)

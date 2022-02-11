@@ -1,0 +1,31 @@
+{
+  "name": "building-blocks",
+  "version": "1.0.0",
+  "description": "以qiankun为基础；实现的微服务",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "bin": {
+    "yf": "./index.js"
+  },
+  "scripts": {
+    "dev": "node ./libs/dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yunfeiw/building-blocks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yunfeiw/building-blocks/issues"
+  },
+  "homepage": "https://github.com/yunfeiw/building-blocks#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.0.0",
+    "figlet": "^1.5.2"
+  }
+}
