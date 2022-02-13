@@ -5,6 +5,8 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import routes from './routes'
 
+import {servePath}  from '../sub.bb.config'
+
 Vue.config.productionTip = false
 
 // new Vue({
@@ -18,7 +20,7 @@ let instance = null;
 function render(props = {}) {
   const { container } = props;
   router = new VueRouter({
-    base: window.__POWERED_BY_QIANKUN__ ? '/vue-app/' : '/',
+    base: window.__POWERED_BY_QIANKUN__ ? servePath : '/',
     mode: 'history',
     routes,
   });
