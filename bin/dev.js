@@ -13,7 +13,7 @@ const { PROJECT_DIR } = require('../bb.config.js');
 
 class app {
     // 微任务栈
-    subProgarms = new Map()
+    subProgarms = (new Map())
 
     constructor(opt) {
         this.init();
@@ -76,6 +76,5 @@ class app {
         }
     }
 }
-console.log(process.YUNFEI)
 
 new app();

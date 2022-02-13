@@ -1,7 +1,11 @@
 const { name } = require('./package');
+const { publicPath } = require('./sub.bb.config');
+
 module.exports = {
+  publicPath,
+  
   devServer: {
-    open:true,
+    open: true,
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
