@@ -1,5 +1,5 @@
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
-import { servePath } from '../sub.bb.config';
+import { servePath } from './sub.bb.config';
 import About from './pages/About';
 import List from './pages/List';
 import Home from './pages/Home';

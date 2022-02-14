@@ -1,5 +1,5 @@
 const { name } = require('./package');
-const { publicPath } = require('./sub.bb.config');
+const { publicPath } = require('./src/sub.bb.config');
 
 module.exports = {
   webpack: (config) => {
