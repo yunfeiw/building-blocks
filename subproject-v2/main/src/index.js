@@ -6,20 +6,17 @@ import { registerMicroApps, start } from 'qiankun';
 registerMicroApps([
   {
     name: 'react-app',
-    // entry: '//localhost:8078',  //生产
     // entry: '//localhost:3000', //测试
-    entry: '/child/react-app/', //方式1
-    
+    entry: '/reactapp/',  //生产
     container: '#container',
-    activeRule: '/react-app-history',
+    activeRule: '/react-app',
   },
   {
     name: 'vue-app',
-    // entry: '//localhost:8076',  //生产
     // entry: '//localhost:8081', //测试
-    entry: '/child/vue-app/', //方式1
+    entry: '/vueapp/',  //生产
     container: '#container',
-    activeRule: '/vue-app-history',
+    activeRule: '/vue-app',
   },
 ]);
 // 启动 qiankun

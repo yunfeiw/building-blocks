@@ -1,4 +1,4 @@
-const PROJECT_DIR = "subproject";
+const PROJECT_DIR = "subproject-v2";
 const TYPE = "";
 
 module.exports = {

@@ -5,23 +5,17 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import routes from './routes'
 
-import {servePath}  from '../sub.bb.config'
+import { servePath } from '../sub.bb.config'
 
 Vue.config.productionTip = false
-
-// new Vue({
-//   router,
-//   render: h => h(App)
-// }).$mount('#app')
 
 let router = null;
 let instance = null;
 
 function render(props = {}) {
-  console.log(window.__POWERED_BY_QIANKUN__ ? servePath : '/')
   const { container } = props;
   router = new VueRouter({
-    base: window.__POWERED_BY_QIANKUN__ ? '/vue-app-history/' : '/child/vue-app/',
+    base: window.__POWERED_BY_QIANKUN__ ? servePath : '/',
     mode: 'history',
     routes,
   });

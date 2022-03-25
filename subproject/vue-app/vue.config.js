@@ -2,8 +2,8 @@ const { name } = require('./package');
 const { publicPath } = require('./sub.bb.config');
 
 module.exports = {
-  publicPath:"/child/vue-app/",
-  
+  // publicPath:"/child/vue-app/",
+  publicPath,
   devServer: {
     open: true,
     headers: {

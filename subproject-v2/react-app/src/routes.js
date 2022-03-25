@@ -7,9 +7,7 @@ import Home from './pages/Home';
 
 
 const Router = () => (
-    // <BrowserRouter basename={window.__POWERED_BY_QIANKUN__ ? servePath : '/'}>
-    <BrowserRouter basename={window.__POWERED_BY_QIANKUN__ ? '/react-app-history/' : '/child/react-app/'}>
-
+    <BrowserRouter basename={window.__POWERED_BY_QIANKUN__ ? servePath : '/'}>
         <Link to="/">首页</Link> |
         <Link to="/about">About</Link> |
         <Link to="/list">List</Link>

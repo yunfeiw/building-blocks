@@ -12,7 +12,7 @@ module.exports = {
     config.output.globalObject = 'window';
 
     // 配置
-    config.output.publicPath = '/child/react-app/';
+    config.output.publicPath = publicPath;
 
     return config;
   },

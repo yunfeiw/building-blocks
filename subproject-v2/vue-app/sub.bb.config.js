@@ -1,6 +1,8 @@
 const servePath = '/vue-app';
-const publicPath = process.env.NODE_ENV === 'production' ? servePath : '/';
-console.log(publicPath);
+//生产
+const PRO_PUBLIC_PATH = '/vueapp/';
+const publicPath = process.env.NODE_ENV === 'production' ? PRO_PUBLIC_PATH : '/';
+
 module.exports = {
     publicPath,
     servePath
