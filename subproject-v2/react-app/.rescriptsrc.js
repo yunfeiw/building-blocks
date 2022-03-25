@@ -11,8 +11,8 @@ module.exports = {
     config.output.chunkLoadingGlobal = `webpackJsonp_${name}`;
     config.output.globalObject = 'window';
 
-    // 配置
-    config.output.publicPath = publicPath;
+    // // 配置
+    // config.output.publicPath = publicPath;
 
     return config;
   },

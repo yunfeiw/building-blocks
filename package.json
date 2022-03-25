@@ -24,7 +24,9 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^9.0.0",
+    "core-js": "^3.21.1",
     "cross-env": "^7.0.3",
+    "custom-event-polyfill": "^1.0.7",
     "figlet": "^1.5.2"
   },
   "devDependencies": {
